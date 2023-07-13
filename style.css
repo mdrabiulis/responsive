@@ -2,6 +2,76 @@
     padding: 0px;
     margin: 0px;
 }
+
+.contaniner{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px) 50px 50px;
+    gap: 20px;
+}
+
+
+
+.box{
+    background-color: gray;
+}
+
+#box-11, #box-12{
+    grid-column: span 3;
+}
+
+#box-1{
+    grid-row: span 5;
+}
+
+
+
+
+#box-6, #box-7, #box-9, #box-10{
+    background-color: tomato
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    padding: 0px;
+    margin: 0px;
+}
 .row{
     height: 400px;
     display: flex;
@@ -38,8 +108,31 @@ img{
 
 
 
+@media screen and (max-width: 576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+
+
+
+}
 
 
 
 
+@media screen and (min-width: 576px)and(max-width: 960px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
 
+    .square-collage{
+        grid-template-columns: 1fr;
+    }
+
+   
+} */
